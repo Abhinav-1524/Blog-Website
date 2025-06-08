@@ -1,0 +1,113 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <!-- Profile Section -->
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+  <div class="mb-10 text-justify">
+    Electronics and Communication Engineer with expertise in hardware-software integration and a keen ability to learn quickly. Skilled in applying computer science concepts to create innovative solutions. Passionate about leveraging technology for impactful advancements in ECE.
+  </div>
+
+  <!-- Education Section -->
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Bachelors in Electronics and Communication Engineering"
+      subtitle="2022 – Present at Amrita Vishwa Vidyapeetham, Kerala, India"
+    />
+    <TimeLineElement
+      title="Intermediate MPC"
+      subtitle="2020 – 2022 at Narayana Junior College, Hyderabad, India"
+    />
+    <TimeLineElement
+      title="Tenth Grade SSC"
+      subtitle="2020 at ST. Ann’s High School, Hyderabad, India"
+    />
+  </div>
+
+  <!-- Experience Section -->
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Secretary, IEEE Student Branch"
+      subtitle="Jan 2025 – Present at IEEE Student Branch, Amrita University"
+    />
+    <TimeLineElement
+      title="Student Intern"
+      subtitle="Apr 2023 – Present at HUTLabs, Amrita Vishwa Vidyapeetham"
+    />
+    <TimeLineElement
+      title="Vice-Secretary, IEEE SIGHT Group"
+      subtitle="Jun 2023 – Jan 2025 at IEEE SIGHT Group, Amrita University"
+    />
+    <TimeLineElement
+      title="Intern"
+      subtitle="Jul 2023 – Jun 2024 at Margati Group, Hyderabad, India"
+    >
+      Worked on developing a mobile application, collaborating with cross-functional teams and delivering user-centric features.
+    </TimeLineElement>
+  </div>
+
+  <!-- Certifications Section -->
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications & Workshops</div>
+  </div>
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li><a href="#" target="_blank">Winner, IEEE Code of Ethics Competition (2024)</a></li>
+    <li><a href="#" target="_blank">Participated, IDC ROBOCON (2024)</a></li>
+    <li><a href="#" target="_blank">E-Yantra Robotics Competition (2023 & 2024)</a></li>
+    <li><a href="#" target="_blank">Rocket Science Workshop by STAR Agency, Surat</a></li>
+    <li><a href="#" target="_blank">AI in Agriculture Workshop by HUTLabs</a></li>
+    <li><a href="#" target="_blank">Web Development Workshop by amFOSS</a></li>
+  </ul>
+
+  <!-- Skills Section -->
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+  <ul class="list-disc md:columns-2 columns-2 mx-6 mb-10">
+    <li>Arduino</li>
+    <li>ANSYS</li>
+    <li>LTSpice</li>
+    <li>MATLAB</li>
+    <li>ModelSim</li>
+    <li>ARM Keil</li>
+    <li>Fusion 360</li>
+    <li>React</li>
+    <li>Flutter</li>
+    <li>Django</li>
+    <li>Angular</li>
+    <li>Godot</li>
+  </ul>
+
+  <!-- Community & Achievements Section -->
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Community & Achievements</div>
+  </div>
+  <ul class="list-disc mx-6 mb-10">
+    <li>Secretary, IEEE Student Branch at Amrita Vishwa Vidyapeetham (2025 – Present)</li>
+    <li>Student Intern, HUTLabs, Amrita Vishwa Vidyapeetham (2023 – Present)</li>
+    <li>Co‑lead, Student Social Responsibility (SSR) initiative for sports awareness at Amrita Vidyalayam</li>
+    <li>Winner, IEEE Code of Ethics Competition at IEEE Summit, Hyderabad (2024)</li>
+    <li>Participant, IDC ROBOCON 2024 at Amrita Vishwa Vidyapeetham</li>
+    <li>Participant, E-Yantra Robotics Competition (2023 & 2024)</li>
+  </ul>
+
+  <!-- Languages Section -->
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Languages</div>
+  </div>
+  <ul class="list-disc mx-6 mb-10 columns-3">
+    <li>English — Fluent</li>
+    <li>Hindi — Fluent</li>
+    <li>Telugu — Native/Bilingual</li>
+  </ul>
+</BaseLayout>
